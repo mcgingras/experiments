@@ -36,14 +36,69 @@ function App() {
   // TODO: write a function to scale letters
 
   // letters and their vertices
-  const letterA = [];
+  const letterA = [
+    {x : 0 , y : 500},
+    {x : 250 , y : 0},
+    {x : 500 , y : 500},
+    {x : 400 , y : 500},
+    {x : 300 , y : 250},
+    {x : 200 , y : 250},
+    {x : 100 , y : 500}
+  ];
+
   // const letterB = [];
-  const letterC = [];
-  const letterD = [];
-  const letterE = [];
+  const letterC = [
+    {x : 100 , y : 0},
+    {x : 500 , y : 0},
+    {x : 500 , y : 100},
+    {x : 100 , y : 100},
+    {x : 100 , y : 400},
+    {x : 500 , y : 400},
+    {x : 500 , y : 500},
+    {x : 100 , y : 500},
+    {x : 0 , y : 400},
+    {x : 0 , y : 100}
+  ];
+  const letterD = [
+    {x : 0 , y : 0},
+    {x : 200 , y : 0},
+    {x : 400 , y : 150},
+    {x : 400 , y : 350},
+    {x : 200 , y : 500},
+    {x : 0 , y : 500}
+  ];
+
+  const letterE = [
+    {x : 0 , y : 0},
+    {x : 500 , y : 0},
+    {x : 500 , y : 100},
+    {x : 100 , y : 100},
+    {x : 100 , y : 200},
+    {x : 200 , y : 200},
+    {x : 200 , y : 300},
+    {x : 100 , y : 300},
+    {x : 100 , y : 400},
+    {x : 500 , y : 400},
+    {x : 500 , y : 500},
+    {x : 0 , y : 500}
+  ];
   // const letterF = [];
   // const letterG = [];
-  const letterH = [];
+  const letterH = [
+    {x : 0 , y : 0},
+    {x : 100 , y : 0},
+    {x : 100 , y : 200},
+    {x : 400 , y : 200},
+    {x : 400 , y : 0},
+    {x : 500 , y : 0},
+    {x : 500 , y : 500},
+    {x : 400 , y : 500},
+    {x : 400 , y : 300},
+    {x : 100 , y : 300},
+    {x : 100 , y : 500},
+    {x : 0 , y : 500},
+  ];
+
   const letterI = [
     {x : 0 , y : 0},
     {x : 500 , y : 0},
@@ -63,8 +118,27 @@ function App() {
   // const letterK = [];
   // const letterL = [];
 
-  const letterO = [];
-  const letterP = [];
+  const letterO = [
+    {x : 200 , y : 0},
+    {x : 300 , y : 0},
+    {x : 500 , y : 200},
+    {x : 500 , y : 300},
+    {x : 300 , y : 500},
+    {x : 200 , y : 500},
+    {x : 0 , y : 300},
+    {x : 0 , y : 200}
+  ];
+
+  const letterP = [
+    {x : 0 , y : 500},
+    {x : 0 , y : 0},
+    {x : 300 , y : 0},
+    {x : 400 , y : 100},
+    {x : 400 , y : 200},
+    {x : 300 , y : 300},
+    {x : 100 , y : 300},
+    {x : 100 , y : 500}
+  ];
   // const letterQ = [];
   const letterR = [];
   const letterS = [];
@@ -116,9 +190,9 @@ function App() {
 
   var boxA = Bodies.rectangle(400, 200, 200, 80);
   var boxB = Bodies.rectangle(800, 500, 80, 80);
-  var m = Bodies.fromVertices(400, 400, letterM);
+  var m = Bodies.fromVertices(400, 400, letterD);
   var i = Bodies.fromVertices(800, 400, letterI);
-  var n = Bodies.fromVertices(1200, 400, letterN);
+  var n = Bodies.fromVertices(1200, 400, letterA);
   var t = Bodies.fromVertices(1600, 400, letterT);
   var ground = Bodies.rectangle(WIDTH/2, HEIGHT+THICK/2, WIDTH, THICK, { isStatic: true });
   var left = Bodies.rectangle(-THICK/2, HEIGHT/2, THICK, HEIGHT, { isStatic: true });
